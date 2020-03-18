@@ -1,0 +1,181 @@
+/* =======================================
+setting screen max-width: 1024px
+======================================= */
+
+@media screen and (max-width: 1024px){
+    /* setting general */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5% 0 5%;
+    }
+    /* end setting general */
+}
+
+/* =======================================
+end setting screen max-width: 1024px
+======================================= */
+
+
+
+/* =======================================
+setting screen max-width: 993px
+======================================= */
+
+@media screen and (max-width: 993px){
+
+    /* setting .photo_slide */
+    .wrapper_content .photo_slide .photo_slide_package .package .photo_slide_describe {
+        padding: 8px 27px 0px 47px;
+    }
+    /* end setting .photo_slide */
+}
+
+/* =======================================
+end setting screen max-width: 993px
+======================================= */
+
+
+/* =======================================
+setting screen max-width: 939px
+======================================= */
+
+@media screen and (max-width: 939px){
+
+    /* setting .photo_slide */
+    .wrapper_content .photo_slide .photo_slide_package .package .photo_slide_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo_slide {
+        height: auto;
+        width: 100%;
+    }
+
+    .package .photo_slide_describe h2 {
+        padding-top: 12px;
+    }
+    /* end setting .photo_slide */
+}
+
+/* =======================================
+end setting screen max-width: 939px
+======================================= */
+
+
+/* =======================================
+setting screen max-width: 800px
+======================================= */
+
+@media screen and (max-width: 800px){
+
+    /* setting .photo_slide */
+    .photo_slide {
+        height: auto;
+        width: 100%;
+    }
+    /* end setting .photo_slide */
+
+    /* setting content */
+    .cover_page_content .information_wrapper .information .post_item_infor {
+        width: 50%;
+    }
+    /* end setting content */
+
+    /* setting footer */
+    .cover_page_content .footer .footer_copyright {
+        width: 50%;
+    }
+
+    .cover_page_content .footer .footer_navigation {
+        width: 50%;
+    }
+    /* end setting footer */
+
+}
+
+/* =======================================
+end setting screen max-width: 800px
+======================================= */
+
+
+/* =======================================
+setting screen max-width: 600px
+======================================= */
+
+@media screen and (max-width: 700px){
+
+    /* setting general */
+    .container {
+        padding: 0 3% 0 3%;
+    }
+    /* end setting general */
+
+    /* setting header */
+    .cover_header .logo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .cover_header .navigation ul.sub_navigation {
+        width: 100%;
+        height: auto;
+    }
+
+    .cover_header .navigation {
+        display: none;
+    }
+
+    /* end setting header */
+
+    /* setting .photo_slide */
+    .photo_slide {
+        height: auto;
+        width: 100%;
+    }
+    /* end setting .photo_slide */
+
+    /* setting content */
+    .cover_page_content .information_wrapper .information .post_item_infor {
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+    }
+    /* end setting content */
+
+        /* setting footer */
+        .cover_page_content .footer .footer_copyright {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .cover_page_content .footer .footer_navigation {
+            /* display: none; */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* end setting footer */
+
+}
+
+/* =======================================
+end setting screen max-width: 600px
+======================================= */
+
+
+/* =======================================
+setting screen max-width: 450px
+======================================= */
+
+@media screen and (max-width: 450px){
+    .cover_page_content .footer .footer_navigation {
+        display: none;
+    }
+}
+
+    /* =======================================
+setting screen max-width: 450px
+======================================= */
