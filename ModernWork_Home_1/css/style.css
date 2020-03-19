@@ -395,6 +395,68 @@ setting footer
 end setting footer
 ==================== */
 
+
+/* ====================
+setting menu do xuong
+==================== */
+.nutmenu {
+    position: fixed;
+    top: 6px;
+    right: 14px;
+    padding: 9px 15px;
+    background: #00000038;
+    display: none;
+    z-index: 3;
+}
+
+.nutmenu i.fas.fa-bars {
+    color: white;
+    font-size: 20px;
+}
+
+.menuphai {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #2a2a2a;
+    /* height: 900px; */
+    width: 150px;
+    z-index: 4;
+    color: white;
+    transition: all 0.4s;
+    right: -300px;
+}
+
+.menuphai h2 {
+    font-size: 30px;
+}
+
+i.fas.fa-times.tat {
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+
+.menuphai.ra {
+    right: 0;
+}
+
+.menudoc a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 13px;
+    display: block;
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ====================
+end setting menu do xuong
+==================== */
+
+
 /* ====================
 setting after
 ==================== */

@@ -128,6 +128,14 @@ setting screen max-width: 600px
         display: none;
     }
 
+    .nutmenu {
+        display: unset;
+    }
+
+    .menuphai {
+        display: unset;
+    }
+
     /* end setting header */
 
     /* setting .photo_slide */
@@ -152,10 +160,7 @@ setting screen max-width: 600px
         }
     
         .cover_page_content .footer .footer_navigation {
-            /* display: none; */
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            display: none;
         }
         /* end setting footer */
 
