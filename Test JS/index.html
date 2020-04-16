@@ -292,5 +292,43 @@
     Tính tổng các số lẻ trong mảng
     ======================================= -->
 
+
+    <!-- =======================================
+    Tính giá trị biểu thức
+    ======================================= -->
+
+        <div class="gtri_bthuc">
+            <script language="javascript">
+    
+                function tinh_bieu_thuc()
+                {
+                    // Biến tính tổng
+                    var tong = 0;
+            
+                    // Lấy giá trị
+                    var n = parseInt(prompt("Nhập số cần tính"));
+            
+                    // Kiểm tra giá trị
+                    if (n <= 0){
+                        alert("Bạn phải nhập số lớn hơn 0");
+                    }
+                    else{
+                        // Tính toán
+                        for (var i = 1; i <= n; i++){
+                            tong += (1/i);
+                        }
+                        document.write("Tổng giá trị biểu thức là: " + tong);
+                    }
+                }
+            
+                // Gọi hàm
+                tinh_bieu_thuc();
+            
+            </script>
+        </div>
+
+    <!-- =======================================
+    Tính giá trị biểu thức
+    ======================================= -->
 </body>
 </html>
