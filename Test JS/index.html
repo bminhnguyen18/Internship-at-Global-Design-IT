@@ -434,5 +434,37 @@
     <!-- =======================================
     Xóa thẻ HTML bằng Javascript
     ======================================= -->
+
+
+    <!-- =======================================
+    Thêm một thẻ HTML bằng Javascript
+    ======================================= -->
+
+        <div class="bt_3">
+            <script language="javascript">
+                function add_element(){
+                    var titles = document.getElementById('titles').value;
+                    if (titles == ''){
+                        alert("Bạn chưa nhập tiêu đề");
+                    }
+                    else {
+                        var html = '<div style="background:red; margin: 5px; padding:5px; color:#FFF">'+title+'</div>';
+                        document.getElementById('results').insertAdjacentHTML('afterend', html);
+                    }
+                }
+            </script>
+
+            <h1>Thêm thẻ HTML</h1>
+
+            <input type="text" id="titles" value=""/> 
+            <input type="button" id="button_add" onclick="add_element()" value="Add"/>
+
+            <div id="results"></div>
+        </div>
+
+    <!-- =======================================
+    Thêm một thẻ HTML bằng Javascript
+    ======================================= -->
+
 </body>
 </html>
