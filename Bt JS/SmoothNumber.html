@@ -8,32 +8,80 @@
 <body>
     <p id="demo"></p>
     <script language="javascript">
-        function myFunction(arr)
-        {
-            if(arr.Length%2==0) {
-                    if( arr[0]==arr[arr.Length-1]&& arr[0]==(arr[arr.Length/2-1]+arr[arr.Length/2]))
+        function myFunction(arr) {
+            // console.log(arr)
+            var flag = true;
+            if(arr.length%2==0) {
+                console.log(arr[0]==arr[arr.length-1])
+                if( arr[0]==arr[arr.length-1]&& arr[0]==(arr[arr.length/2-1]+arr[arr.length/2]))
+                {
+                    flag= true;
+                }
+                else
+                {
+                    flag= false;
+                }
+            }
+                else if(arr.length%2!=0){
+                    if( arr[0]==arr[arr.length-1] && arr[0]== arr[(arr.length-1)/2])
                     {
-                        return true;
+                        flag= true;
                     }
                     else
                     {
-                        return false;
+                        flag= false;
                     }
                 }
-                else {
-                    if( arr[0]==arr[arr.Length-1] && arr[0]== arr[(arr.Length-1)/2])
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
+            if (flag == true) {
+                document.write(arr + 'Is Smoth');
+            }
+            else {
+                document.write(arr + 'Is not Smoth');
+            }
+            // console.log(flag);
         }
-        document.getElementById("demo").innerHTML = myFunction();  
-    
-        arr= [7, 2, 2, 5, 10, 7]
+        // console.log(flag);  
+        
+        var arr1= [7, 2, 2, 5, 10, 7];
+        myFunction(arr1);
+        console.log(arr1);
+//         myFunction(arr2);
+//         console.log(arr2);
+//         myFunction(arr3);
+//         console.log(arr3);
+//         myFunction(arr4);
+//         console.log(arr4);
+//         myFunction(arr5);
+//         console.log(arr5);
+//         myFunction(arr6);
+//         console.log(arr6);
+//         myFunction(arr7);
+//         console.log(arr7);
+//         myFunction(arr8);
+//         console.log(arr8);
+//         myFunction(arr9);
+//         console.log(arr9);
+//         myFunction(arr10);
+//         console.log(arr10);
+
+// var arr1= [7, 2, 2, 5, 10, 7];
+
+
+// var arr2= [-5, -5, 10];
+// var arr3= [4, 2];
+// var arr4= [45, 23, 12, 33, 12, 453, -234, -45];
+// var arr5= [-12, 34, 40, -5, -12, 4, 0, 0, -12];
+// var arr6= [9, 0, 15, 9];
+// var arr7= [-6, 6, -6];
+// var arr8= [26, 26, -17];
+
+// var arr9= [-7, 5, 5, 10];
+
+
+// var arr10= [3, 4, 5];
+
+
+
     </script>
 </body>
 </html>
