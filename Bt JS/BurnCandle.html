@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurnCandles</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script language="javascript">
+        var candlesNumber = parseInt(prompt("Input the number of candle(s)"));
+        var makeNew=parseInt(prompt("Input the number of candle(s) can reduce"));
+        // var burned=0 , leftowers=0;
+        if (candlesNumber<1|| candlesNumber>15 || makeNew<2 || makeNew>5){
+            alert("Input fail")
+        }
+        else
+        {
+
+            var burned=0;
+            var leftowers=0;
+
+            while(candlesNumber>0){
+                burned+=candlesNumber;
+                leftowers+=candlesNumber;
+                candlesNumber= Math.floor(leftowers/makeNew);
+                leftowers%=makeNew;
+            }
+        }
+        document.write(burned); 
+    </script>
+</body>
+</html>

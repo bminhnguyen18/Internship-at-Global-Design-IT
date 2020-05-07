@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+
+    var arr=null;
+    var ar_length=null;
+    var value = '';
+    while (value!=null)
+    {
+        ar_length=0;
+        value = prompt("Nhập số, nếu muốn dừng thì không nhập gì");
+        arr.push(value);
+        ar_length= arr.Length;
+        if (ar_length<2 || ar_length>105 || value<(-109) || value>109)
+        {
+            alert("Input fail")
+        }
+        else
+        {
+            var x=new Boolean(true);
+            if (x)
+            {
+                if(arr.Length%2==0) {
+                    return arr[0]==arr[arr.Length-1]&& arr[0]==(arr[arr.Length/2-1]+arr[arr.Length/2]);
+                }
+                else {
+                    return arr[0]==arr[arr.Length-1] && arr[0]== arr[(arr.Length-1)/2];
+                }
+            }
+        }
+
+
+    }
+    document.write(Boolean);
+
+        // Boolean isSmooth(int[] arr) {
+        //     if(arr.Length%2==0) {
+        //         return arr[0]==arr[arr.Length-1] && arr[0]== (arr[arr.Length/2-1]+arr[arr.Length/2]);
+        //     }
+        //     else {
+        //         return arr[0]==arr[arr.Length-1] && arr[0]== arr[(arr.Length-1)/2];
+        //     }
+        // }
+
+
+
+    </script>
+</body>
+</html>
