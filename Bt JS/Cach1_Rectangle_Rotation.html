@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Rotation</title>
+</head>
+<body>
+    <script>
+        function Rectangle_Rotation (a,b)
+        {
+        var a_in, b_in, a_out, b_out, number_point;
+        a_out = Math.floor(a / 2 / 1.414) * 2 + 1;
+        b_out = Math.floor(b / 2 / 1.414) * 2 + 1;
+        a_in = (Math.floor(((a - 1.414) / 2) / 1.414) + 1) * 2;
+        b_in = (Math.floor(((b - 1.414) / 2) / 1.414) + 1) * 2;
+        number_point= a_out*b_out+a_in*b_in;
+        console.log(number_point)
+        }
+        const x= Number(6);
+        const y= Number(4);
+        Rectangle_Rotation(x,y);
+    </script>
+</body>
+</html>

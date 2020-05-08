@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Rotation</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Input the number of candle(s)"));
+        var b=parseInt(prompt("Input the number of candle(s) can reduce"));
+        if (2<=a && a<=50 && 2<=b && b<=50)
+        {
+            var a_in, b_in, a_out, b_out, number_point;
+
+            a_out = Math.floor(a / 2 / (Math.sqrt(2))) * 2 + 1;
+            b_out = Math.floor(b / 2 / (Math.sqrt(2))) * 2 + 1;
+
+            a_in = (Math.floor(((a - (Math.sqrt(2))) / 2) / (Math.sqrt(2))) + 1) * 2;
+            b_in = (Math.floor(((b - (Math.sqrt(2))) / 2) / (Math.sqrt(2))) + 1) * 2;
+            number_point= a_out*b_out+a_in*b_in;
+
+            document.write("The number of points is:"+ number_point);
+            console.log(number_point);
+        }
+        else
+        {
+            alert("Input error !!!")
+        }
+    </script>
+</body>
+</html>
