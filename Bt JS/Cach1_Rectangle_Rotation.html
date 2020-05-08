@@ -10,10 +10,10 @@
         function Rectangle_Rotation (a,b)
         {
         var a_in, b_in, a_out, b_out, number_point;
-        a_out = Math.floor(a / 2 / 1.414) * 2 + 1;
-        b_out = Math.floor(b / 2 / 1.414) * 2 + 1;
-        a_in = (Math.floor(((a - 1.414) / 2) / 1.414) + 1) * 2;
-        b_in = (Math.floor(((b - 1.414) / 2) / 1.414) + 1) * 2;
+        a_out = Math.floor(a / 2 / (Math.sqrt(2))) * 2 + 1;
+        b_out = Math.floor(b / 2 / (Math.sqrt(2))) * 2 + 1;
+        a_in = (Math.floor(((a - (Math.sqrt(2))) / 2) / (Math.sqrt(2))) + 1) * 2;
+        b_in = (Math.floor(((b - (Math.sqrt(2))) / 2) / (Math.sqrt(2))) + 1) * 2;
         number_point= a_out*b_out+a_in*b_in;
         console.log(number_point)
         }
