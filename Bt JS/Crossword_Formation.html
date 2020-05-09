@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var word_1= ["c","r","o","s","s","w","o","r","d"];
+        var word_2 = ["s","q","u","a","r","e"];
+        var word_3 = ["f","o","r","m","a","t","i","o","n"];
+        var word_4 = ["s","o","m","e","t","h","i","n","g"];
+        var input_words= {word_1,word_2,word_3,word_4};
+        console.log(word_1);
+        console.log(word_2);
+        console.log(word_3);
+        console.log(word_4);
+        console.log(input_words);
+        crosswordFormation(input_words);
+        function crosswordFormation ()
+        {
+            var t=0;
+            var i,j,k,l;
+            for (i = 0; i < input_words[0].length; i++)
+                for (j = 0; j < input_words[1].length; j++)
+                    for (k = 0; k < input_words[2].length; k++)
+                        for (l = 0; l < input_words[3].length; l++)
+                            if (i != j && i != k && i != l && 
+                                j != k && j != l && k != l)
+                                t+=check(input_words[i],input_words[j],input_words[k],input_words[l]);
+                                return t;
+                                console.log(t);
+        }
+
+        function check ()
+        {
+            var t=0;
+            var a1,a2,b1,b2,c1,c2,c3,c4;
+            for (a1 = 0; a1 < a.length(); a1++)
+                for (a2 = a1+2; a2 < a.length(); a2++)
+                    for (b1 = 0; b1 < b.length(); b1++)
+                        for (b2 = b1+2; b2 < b.length(); b2++)
+                            for (c1 = 0; c1 < c.length(); c1++)
+                                for (d1 = 0; d1 < d.length(); d1++)
+                                {
+                                    c2 = c1 + (a2-a1);
+                                    d2 = d1 + (b2-b1);
+                                    if (c2 < c.length() && d2 < d.length()) 
+                                    {
+                                        if (a.charAt(a1)==b.charAt(b1)
+                                        && a.charAt(a2)==d.charAt(d1)
+                                        && c.charAt(c1)==b.charAt(b2)
+                                        && c.charAt(c2)==d.charAt(d2)) t++;
+                                    }
+                                }
+            return t;
+        }
+
+    </script>
+</body>
+</html>
