@@ -19,6 +19,7 @@
         console.log(word_4);
         console.log(input_words);
         crosswordFormation(input_words);
+        
         function crosswordFormation (word)
         {
             var t=0;
@@ -64,12 +65,12 @@
                                                             if (c2 < c.length() && d2 < d.length()) 
                                                                 {
                                                                     if (a.charAt(a1)==b.charAt(b1)
-                                                                    && a.charAt(a2)==d.charAt(d1)
-                                                                    && c.charAt(c1)==b.charAt(b2)
-                                                                    && c.charAt(c2)==d.charAt(d2))
-                                                                    {
-                                                                        t++;
-                                                                    }
+                                                                        && a.charAt(a2)==d.charAt(d1)
+                                                                        && c.charAt(c1)==b.charAt(b2)
+                                                                        && c.charAt(c2)==d.charAt(d2))
+                                                                        {
+                                                                            t++;
+                                                                        }
                                                                 }
                                                         }
                                                 }
