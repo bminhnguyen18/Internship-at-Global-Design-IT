@@ -34,23 +34,23 @@
         var a=typeof input_words;
         // document.write(a + "<hr>");
 
-        function crosswordFormation (word)
+        function crosswordFormation (input_words)
             {
                 var t=0;
-                var i,j,k,l;
+                var i=0,j=0,k=0,l=0;
                 document.write(t + "<hr>");
                 document.write(a + "<hr>");
-                for (i = 0; i < input_words.word_1.length; i++)
+                for (i = 0; i < input_words.length; i++)
                     {
-                        for (j = 0; j < input_words.word_2.length; j++)
+                        for (j = 0; j < input_words.length; j++)
                             {
-                                for (k = 0; k < input_words.word_3.length; k++)
+                                for (k = 0; k < input_words.length; k++)
                                     {
-                                        for (l = 0; l < input_words.word_4.length; l++)
+                                        for (l = 0; l < input_words.length; l++)
                                             {
                                                 if (i != j && i != k && i != l && j != k && j != l && k != l)
                                                     {
-                                                        t+=check(input_words.word_1[i],input_words.word_2[j],input_words.word_3[k],input_words.word_4[l]);
+                                                        t+=check(input_words[i],input_words[j],input_words[k],input_words[l]);
                                                         return t;
                                                         console.log(t);
                                                     }
@@ -64,29 +64,29 @@
             {
                 var t=0;
                 var a1,a2,b1,b2,c1,c2,c3,c4;
-                for (a1 = 0; a1 < input_words.word_1.length; a1++)
+                for (a1 = 0; a1 < input_words[0].length; a1++)
                     {
-                        for (a2 = a1+2; a2 < input_words.word_1.length; a2++)
+                        for (a2 = a1+2; a2 < input_words[0].length; a2++)
                             {
-                                for (b1 = 0; b1 < input_words.word_2.length; b1++)
+                                for (b1 = 0; b1 < input_words[1].length; b1++)
                                     {
-                                        for (b2 = b1+2; b2 < input_words.word_2.length; b2++)
+                                        for (b2 = b1+2; b2 < input_words[1].length; b2++)
                                             {
-                                                for (c1 = 0; c1 < input_words.word_3.length; c1++)
+                                                for (c1 = 0; c1 < input_words[2].length; c1++)
                                                     {
-                                                        for (d1 = 0; d1 < input_words.word_4.length; d1++)
+                                                        for (d1 = 0; d1 < input_words[3].length; d1++)
                                                             {
                                                                 c2 = c1 + (a2-a1);
                                                                 d2 = d1 + (b2-b1);
-                                                                if (c2 < input_words.word_3.length && d2 < input_words.word_4.length) 
+                                                                if (c2 < input_words[2].length && d2 < input_words[3].length) 
                                                                     {
-                                                                        if (input_words.word_1.a1==input_words.word_2.b1
-                                                                            && input_words.word_1.a2==input_words.word_4.d1
-                                                                            && input_words.word_3.c1==input_words.word_2.b2
-                                                                            && input_words.word_3.c2==input_words.word_4.d2)
+                                                                        if (input_words[0].a1==input_words[1].b1
+                                                                            && input_words[0].a2==input_words[3].d1
+                                                                            && input_words[2].c1==input_words[1].b2
+                                                                            && input_words[2].c2==input_words[3].d2)
                                                                             {
                                                                                 t++;
-                                                                            }
+                                                                            }   
                                                                     }
                                                             }
                                                     }
