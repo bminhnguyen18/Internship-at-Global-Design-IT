@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = 0;
+        function crosswordFormation(words) {
+            rearrange_words([],words);
+            return result;
+        }
+        function rearrange_words(current_word,rest_word){
+            if (rest_word.length == 1){
+                result += crossword(current_word.concat(rest_word));
+            }else{
+                rest_word.forEach((item,index) => {
+                    rearrange_words(current_word.concat([item]),rest_word.filter((i,ii) => ii !== index));
+                });
+            }
+        }
+        function crossword(words){
+            let result = 0;
+            for(let c1 = 2; c1 < words[0].length; c1++){
+                for (let c2 = 0; c2 < words[1].length - 2; c2++){
+                    if (words[0][c1] == words[1][c2]){
+                        for (let c22 = c2 + 2; c22 < words[1].length; c22++){
+                            for (let c3 = 2; c3 < words[2].length; c3++){
+                                if (words[1][c22] == words[2][c3] && words[3].length >= c22 - c2 + 1){
+                                    //console.log(words[1][c22],c22,c3,Math.max(0,c3 - c1));
+                                    for (let c32 = Math.max(0,c3 - c1); c32 < c3 - 1; c32++){
+                                        for (let c4 = 0; c4 < words[3].length - c22 + c2; c4++){
+                                            //console.log(words[3][c4],words[0][c32 - c3 + c1])
+                                            if (words[3][c4 + c22 - c2] == words[2][c32] && words[3][c4] == words[0][c32 - c3 + c1]) result++;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return result;
+        }
+        var words=
+["phenomenon", 
+"remuneration", 
+"particularly", 
+"pronunciation"]
+
+
+        console.log(crosswordFormation(words));
+
+
+
+    </script>
+</body>
+</html>
