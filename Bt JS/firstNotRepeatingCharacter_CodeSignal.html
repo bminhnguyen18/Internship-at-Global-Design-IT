@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // <!----------$-START Passed-$---------->
+        function firstNotRepeatingCharacter(s)
+            {
+                const seen = {};
+                for (let i = 0; i < s.length; i++)
+                    {
+                        if (!seen[s[i]])
+                            {
+                            const found = s.substring(i+1, s.length).indexOf(s[i]);
+                                if (found === -1)
+                                    {
+                                        return s[i];
+                                    } else
+                                        {
+                                            seen[s[i]] = true;
+                                        }
+                            }
+                    }
+                return '_';
+            }
+// <!----------x-END Passed-x---------->
+    </script>
+</body>
+</html>
