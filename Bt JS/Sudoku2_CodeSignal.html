@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku2</title>
+</head>
+<body>
+    
+    <!----------$-START Test Sudoku2_ver1-$---------->
+    <script>
+        for i in range(9):
+        for j in range(9):
+        if grid[i][j] in grid[i][:j] or grid[i][j] in grid[i][j+1:]:
+        if grid[i][j] is not ".":
+        return False
+        for h in range(9):
+        y=[]
+        for f in grid:
+        y.append(f[h])
+        for u in range(9):
+        if y[u] in y[:u] or y[u] in y[u+1:]:
+        if y[u] is not ".":
+        return False
+        o=[]
+        for t in range(0,9,3):
+        for u in range(0,9,3):
+        for k in range(0+t,3+t):
+        for l in range(0+u,3+u):
+        if grid[k][l] in o and grid[k][l] is not ".":
+        return False
+        else:
+        o.append(grid[k][l])
+        o=[]
+        return True
+    </script>
+    <!----------x-END Test Sudoku2_ver1-x---------->
+    
+    
+</body>
+</html>
