@@ -9,8 +9,8 @@
     body
         {
             font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            background: orange;
-            color: #ffffff;
+            background: black;
+            color: #17D4FE;
         }
 
     .wrapper
@@ -28,6 +28,11 @@
             font-size: 2.6em;
             text-transform: uppercase;
         }
+
+    p
+    {
+        font-size: 6em;
+    }
 
     #seconds, #tens
         {
@@ -55,7 +60,11 @@
             transition: all 0.5s ease-in-out;
             background-color: #ffffff;
             border: solid 1px #fff;
-            color: #ffa600;
+            /* color: #ffa600; */
+        }
+    button#button-start
+        {
+            color: #00ff00;
         }
     button#button-stop
         {
@@ -71,7 +80,6 @@
 <body>
     <div class="wrapper">
         <h1>Stopwatch</h1>
-        <h2>Vanilla JavaScript Stopwatch</h2>
         <p><span id="seconds">00</span>:<span id="tens">00</span></p>
         <button id="button-start">Start</button>
         <button id="button-stop">Stop</button>
@@ -96,6 +104,9 @@
                         buttonStart.style.visibility='hidden';
                         buttonStop.style.visibility='visible';
                         buttonReset.style.visibility='visible';
+                        buttonStop.style.color='red';
+                        buttonReset.style.color='yellow';
+                        buttonReset.style.fontWeight='bold';
                     }
 
                 buttonStop.onclick = function()
@@ -103,6 +114,7 @@
                         clearInterval(Interval);
                         buttonStart.style.visibility='visible';
                         buttonStop.style.visibility='hidden';
+                        buttonStart.style.color='green';
                     }
 
                 buttonReset.onclick = function()
@@ -115,6 +127,7 @@
                         buttonStop.style.visibility='hidden';
                         buttonStart.style.visibility='visible';
                         buttonReset.style.visibility='hidden';
+                        buttonStart.style.color='green';
                     }
 
 
