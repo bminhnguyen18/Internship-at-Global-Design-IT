@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Button</title>
+
+
+    <!-- add jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <!-- end add jquery -->
+
+
+</head>
+<style>
+    .container {
+    width: 900px;
+    margin: auto;
+    }
+    #myBtn {
+    display: none; /* Mặc định button sẽ được ẩn*/
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    }
+
+    #myBtn:hover {
+    background-color: #555;
+    }
+</style>
+<body>
+
+
+<!--##################-$-Start Test ver 1-$-##################-->
+<div class="container">
+    <button id="myBtn" title="Go to top">Back To Top</button>
+    <p style="background-color:rgba(127, 182, 195, 0.726) ;padding:30px 30px 2500px">
+        Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+Tạo 1 nút back to top.
+
+1/ bấm cái scroll về top. Hiển thị dạng position fixed bên dưới góc phải màn hình
+
+2/ lúc mới vào trang hãy ẩn nó đi. Khi scroll tới 1 đoạn khoảng nửa màn hình thì mới hiện ra. Ngược lại cũng rứa khi scroll lên top thì ẩn lại
+
+3/ thêm điều kiện khi user scroll up thì mới hiện còn scroll down thì tắt
+
+4/ thay vì ẩn hiện bằng show hide hãy để nó trượt theo ẩn hiện của thao tác scroll(Tham khảo hoạt động của thanh bar bên dưới của Safari điện thoại iphone
+    </p>
+</div>
+
+
+<script>
+    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+    window.onscroll = function() {scrollFunction()};
+    // khai báo hàm scrollFunction
+    function scrollFunction()
+        {
+            // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+                {
+                    //nếu lớn hơn 300px thì hiện button
+                    document.getElementById("myBtn").style.display = "block";
+                }
+            else
+                {
+                    //nếu nhỏ hơn 300px thì ẩn button
+                    document.getElementById("myBtn").style.display = "none";
+                }
+        }
+    //gán sự kiện click cho button
+    document.getElementById('myBtn').addEventListener("click", function()
+        {
+            //Nếu button được click thì nhảy về đầu trang
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+</script>
+<!--##################-X-End Test ver 1-X-##################-->
+
+
+
+</body>
+</html>
