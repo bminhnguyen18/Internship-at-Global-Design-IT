@@ -325,18 +325,23 @@ Tạo 1 nút back to top.
     //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
     window.onscroll = function() {scrollFunction()};
     // khai báo hàm scrollFunction
+    var a=300;
     function scrollFunction()
         {
+            vitrihientai = $(window).scrollTop();
+        console.log(vitrihientai);
             // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)
+            if (document.body.scrollTop > 300 && a>vitrihientai || document.documentElement.scrollTop > 300 && a>vitrihientai)
                 {
                     //nếu lớn hơn 300px thì hiện button
                     document.getElementById("myBtn").style.display = "block";
+                    a=vitrihientai;
                 }
             else
                 {
                     //nếu nhỏ hơn 300px thì ẩn button
                     document.getElementById("myBtn").style.display = "none";
+                    a=vitrihientai;
                 }
         }
     //gán sự kiện click cho button
