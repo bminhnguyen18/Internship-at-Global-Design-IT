@@ -351,6 +351,12 @@ Tạo 1 nút back to top.
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         });
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == $(document).height())
+            {
+                document.getElementById("myBtn").style.display = "block";
+            }
+});
 </script>
 <!--##################-X-End Test ver 1-X-##################-->
 
