@@ -46,6 +46,7 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
+    /* transform: translate(5px,10px); */
     }
 
     #myBtn:hover {
@@ -401,7 +402,7 @@ Tạo 1 nút back to top.
         {
             var ban_dau=0;
             var hien_tai=$(window).scrollTop();
-            var b=0;
+            var b=hien_tai-ban_dau;
             var button_height=0;
 
             if (ban_dau>= hien_tai && ban_dau>300)
@@ -412,7 +413,8 @@ Tạo 1 nút back to top.
                             // nếu giá trị <300px thì thực hiện cộng giá trị độ cao bottom  thêm b px
                             $myBtn.css
                                 ({
-                                    'bottom': 0+ b,
+                                    // 'bottom': 0+ b,
+                                    'transform': translate(0,-b),
 		                        })
                         }
                     else
@@ -420,7 +422,8 @@ Tạo 1 nút back to top.
                             // nếu giá trị >=300px thì thực hiện cộng giá trị độ cao bottom thêm 300px hoặc có thể là 0px tuỳ theo trường hợp xảy ra
                             $myBtn.css
                                 ({
-                                    'bottom': 0+ 300,
+                                    // 'bottom': 0+ 300,
+                                    'transform': translate(0,-300),
 		                        })
                         }
                     button_height=$myBtn.css.height;
