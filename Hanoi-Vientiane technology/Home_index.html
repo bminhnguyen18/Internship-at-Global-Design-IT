@@ -33,9 +33,9 @@
                 
                 <!-- start hotline -->
                 <div class="hotline">
-                    <p><img src="" alt="#"></p>
+                    <p><i class="fas fa-exclamation-circle"></i></p>
                     <p>Hotline</p>
-                    <p><img src="" alt="#"></p>
+                    <p><i class="fas fa-phone-volume"></i></p>
 
                     <div class="hotline_drop">
                         <p><img src="" alt="#"></p>
@@ -62,12 +62,12 @@
                 <!-- start navigation -->
                 <div class="navigation">
                     <ul class="sub_navigation">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Desktop PC</a></li>
-                        <li><a href="#">Laptop</a></li>
-                        <li><a href="#">Camera</a></li>
-                        <li><a href="#">Mobile accessories</a></li>
-                        <li><a href="#">office equipment</a></li>
+                        <li><a href="#" class="active"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fas fa-desktop"></i>Desktop PC</a></li>
+                        <li><a href="#"><i class="fas fa-laptop"></i>Laptop</a></li>
+                        <li><a href="#"><i class="fas fa-video"></i>Camera</a></li>
+                        <li><a href="#"><i class="fas fa-mobile-alt"></i>Mobile accessories</a></li>
+                        <li><a href="#"><i class="fas fa-print"></i>office equipment</a></li>
                     </ul>
                 </div>
                 <!-- end navigation -->
@@ -150,10 +150,6 @@
                                             200.000 kip
                                         </p>
 
-                                        <p class="price_root">
-                                            350.000 kip
-                                            <!-- cần thêm phần gạch ngang chữ cho đúng -->
-                                        </p>
                                     </div>
                                 </div>
                                 <!-- end one_product -->
@@ -189,10 +185,6 @@
                                             200.000 kip
                                         </p>
 
-                                        <p class="price_root">
-                                            350.000 kip
-                                            <!-- cần thêm phần gạch ngang chữ cho đúng -->
-                                        </p>
                                     </div>
                                 </div>
                                 <!-- end one_product -->
@@ -223,10 +215,6 @@
                                             200.000 kip
                                         </p>
 
-                                        <p class="price_root">
-                                            350.000 kip
-                                            <!-- cần thêm phần gạch ngang chữ cho đúng -->
-                                        </p>
                                     </div>
                                 </div>
                                 <!-- end one_product -->
@@ -242,39 +230,39 @@
                     <div class="content_right">
                         <!-- HT_company -->
                         <div class="HT_company">
-                            <p><img src="images/main/HT_Company_choose.png" alt="" width="184" height="54"></p>
-                            <ul class="HT_company">
+                            <p id="logo_HT"><img src="images/main/HT_Company_choose.png" alt="" width="184" height="54"></p>
+                            <ul class="deail_HT_company">
                                 <li>
                                     <p><img src="images/main/free_ship.png" alt="" width="83" height="66"></p>
-                                    <p>Miễn phí giao hàng trong
+                                    <p class="detail_ht">Miễn phí giao hàng trong
                                         <span id="ht1">Bán kính 15km</span>
                                     </p>
                                 </li>
 
                                 <li>
                                     <p><img src="images/main/guarantee.png" alt="" width="81" height="76"></p>
-                                    <p>Bảo hành lên đến
+                                    <p class="detail_ht">Bảo hành lên đến
                                         <span id="ht2">18 tháng</span>
                                     </p>
                                 </li>
 
                                 <li>
                                     <p><img src="images/main/install_software.png" alt="" width="66" height="64"></p>
-                                    <p>Cài đặt phần mềm
+                                    <p class="detail_ht">Cài đặt phần mềm
                                         <span id="ht3">Miễn phí theo yêu cầu</span>
                                     </p>
                                 </li>
 
                                 <li>
                                     <p><img src="images/main/sale.png" alt="" width="62" height="62"></p>
-                                    <p>Hưởng đầy đủ
+                                    <p class="detail_ht">Hưởng đầy đủ
                                         <span id="ht4">Các chương trình khuyến mãi</span>
                                     </p>
                                 </li>
 
                                 <li>
-                                    <p><img src="" alt=""></p>
-                                    <p>
+                                    <p><img src="images/main/change.png" alt="" width="85" height="75"></p>
+                                    <p class="detail_ht">
                                         <span id="ht5">Nhận lại hàng</span>
                                         Khi không đúng yêu cầu của khách.
                                     </p>
@@ -285,7 +273,8 @@
 
                         <!-- start best_seller -->
                         <div class="best_seller">
-                            <ul class="best_seller">
+                            <h2>sản phẩm đang bán chạy</h2>
+                            <ul class="best_seller_list">
                                 <li>
                                     <!-- start one_product -->
                                     <div class="one_product">
@@ -319,7 +308,7 @@
 
                         <!-- start hot_product -->
                         <div class="hot_product">
-                            <ul class="hot_product">
+                            <ul class="hot_product_list">
                                 <li>
                                     <!-- start one_product -->
                                     <div class="one_product">
@@ -350,17 +339,22 @@
                                 </div>
 
                                 <div class="contact_detail">
-                                    <p><img src="" alt="#"></p>
-                                    <!-- có thể thay thế bằng fontawesome -->
-                                    <p>Vieng Chaleune, Vientiane </p>
+                                    <h2>Liên hệ</h2>
 
-                                    <p><img src="" alt="#"></p>
-                                    <!-- có thể thay thế bằng fontawesome -->
-                                    <p>020 97 86 86 86</p>
+                                    <div class="contact_home">
+                                        <p><i class="fas fa-home"></i></p>
+                                        <p>Vieng Chaleune, Vientiane </p>
+                                    </div>
 
-                                    <p><img src="" alt="#"></p>
-                                    <!-- có thể thay thế bằng fontawesome -->
-                                    <p>contact@htcompany.co</p>
+                                    <div class="contact_phone">
+                                        <p><i class="fas fa-phone-alt"></i></p>
+                                        <p>020 97 86 86 86</p>
+                                    </div>
+
+                                    <div class="contact_mail">
+                                        <p><i class="fas fa-envelope"></i></p>
+                                        <p>contact@htcompany.co</p>
+                                    </div>
                                 </div>
                             </ul>
                         </div>
