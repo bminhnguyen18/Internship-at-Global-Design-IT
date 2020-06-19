@@ -188,6 +188,10 @@ li {
     margin: 0px;
 }
 
+.content_cover .content .one_part:last-child {
+    border: none;
+}
+
 .content_cover .content .one_part h2 {
     color: #242424;
     font-weight: bold;
@@ -373,18 +377,159 @@ li {
 /*--------x-END setting_left -x--------*/
 
 
+/*--------$-START setting shop_brand-$--------*/
+
+.content_cover .shop_brand {
+    background: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ededed;
+}
+
+.content_cover .shop_brand h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #242424;
+    border-bottom: 2px solid #ffd401;
+    display: inline;
+}
+
+.content_cover .shop_brand p {
+    color: #646464;
+    font-size: 16px;
+    margin: 0;
+}
+
+.content_cover .shop_brand ul {
+    /* width: 100%; */
+    text-align: center;
+    display: inline-block;
+}
+
+.content_cover .shop_brand li {
+    float: left;
+}
+
+/*--------x-END setting shop_brand-x--------*/
+
+
+
 /*##################-X-End setting content_cover-X-##################*/
 
 
-/*##################-$-Start setting after and before-$-##################*/
 
-.navigation_menu_cover::before,
+/*##################-$-Start Setting footer_cover-$-##################*/
+
+.footer_cover {
+    background: #272727;
+    color: #ffffff;
+    border-top: 1px solid #ffdd02;
+}
+
+.footer_cover h4 {
+    font-size: 14px;
+    color: #ffdd02;
+    font-weight: inherit;
+}
+
+.footer_cover ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer_cover a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: inherit;
+}
+
+.footer_cover .infor {
+    width: 20%;
+    display: inline-block;
+}
+
+.footer_cover .customer_support {
+    width: 20%;
+    display: inline-block;
+}
+
+.footer_cover .service {
+    width: 20%;
+    display: inline-block;
+}
+
+.footer_cover .social_network {
+    width: 38%;
+    /* chú ý ở đây là 38% không phải 40% như dự tính */
+    display: inline-block;
+    text-align: left;
+}
+
+.footer_cover .social_network h4 {
+    text-transform: uppercase;
+}
+
+.footer_cover .social_network ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+.footer_cover .social_network li {
+    float: left;
+}
+
+/*##################-X-End Setting footer_cover-X-##################*/
+
+
+
+/*##################-$-Start setting copyright & design-$-##################*/
+
+.cover_copyright {
+    background: #181818;
+    color: #ababab;
+    font-size: 12px;
+    border-top: 1px solid #303030;
+    text-transform: uppercase;
+}
+
+.cover_copyright p {
+    margin: 6px -12px 24px 9px;
+    padding-top: 15px;
+}
+
+.cover_copyright .copyright {
+    float: left;
+}
+
+.cover_copyright .design {
+    float: right;
+}
+
+/*##################-X-End setting copyright & design-X-##################*/
+
+
+/*##################-$-Start setting after and before-$-##################*/
+/* .infor:before,
+.customer_support:before,
+.service:before,
+.social_network:before, */
+.cover_copyright:before,
+.navigation_menu_cover:before,
 .header_cover:before {
     content: '';
     display: table;
     clear: both;
 }
 
+/* ul.logo_brand:after, */
+/* .infor:after,
+.customer_support:after,
+.service:after,
+.social_network:after, */
+.cover_copyright:after,
+.shop_brand:after,
 .content_cover .content:after,
 .sub_navigation:after,
 .navigation_menu_cover:after,
