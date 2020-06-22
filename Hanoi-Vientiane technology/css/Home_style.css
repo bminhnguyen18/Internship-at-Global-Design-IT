@@ -142,6 +142,74 @@ li {
 }
 
 
+/*--------$-START setting photo_slide_bar-$--------*/
+
+.content_cover .photo_slide_bar {
+    border: 1px solid #000000;
+}
+
+.content_cover .photo_slide_bar .main_slider {
+    float: left;
+    width: 50%;
+    border: 1px solid #000000;
+    overflow: hidden;
+    clear: right;
+}
+
+.content_cover .photo_slide_bar .service_button {
+    float: right;
+    width: 50%;
+    overflow: hidden;
+    clear: right;
+    margin: -1px;
+    /* nhớ thêm padding dương vào để bù lại cho margin âm */
+}
+
+.content_cover .photo_slide_bar .service_button .service_row {
+    width: 100%;
+}
+
+.service_button .service_row .one_button {
+    width: 32%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.service_button .service_row .one_button p {
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#s_r_1 {
+    background: green;
+}
+
+#s_r_2 {
+    background: blue;
+}
+
+#s_r_3 {
+    background: orchid;
+}
+
+#s_r_4 {
+    background: purple;
+}
+
+#s_r_5 {
+    background: orange;
+}
+
+#s_r_6 {
+    background: yellow;
+}
+
+/*--------x-END setting photo_slide_bar-x--------*/
+
+
 /*--------$-START setting content_right-$--------*/
 
 .content_cover .content .content_left {
@@ -162,10 +230,6 @@ li {
     font-size: 15px;
     font-weight: bold;
 }
-
-/* .product_img {
-    position: relative;
-} */
 
 .content_left .product_list .one_product .product_image {
     position: relative;
@@ -288,20 +352,6 @@ li {
     padding: 0;
 }
 
-/* .content_right .HT_company p img {
-    float: left;
-    display: inline-block;
-    width: 30%
-}
-
-.content_right .HT_company p .detail_ht{
-    float: right;
-    display: inline-block;
-    width: 69%;
-} */
-
-
-
 .content_cover .content .content_right .best_seller h2 {
     color: #242424;
     font-weight: bold;
@@ -352,9 +402,6 @@ li {
 .content_right .best_seller {
     border-bottom: 1px solid #f2f2f2;
 }
-
-
-
 
 .content_right .hot_product {
     border-bottom: 1px solid #f2f2f2;
@@ -458,6 +505,8 @@ li {
     font-size: 14px;
     color: #ffdd02;
     font-weight: inherit;
+    text-transform: uppercase;
+    margin-bottom: 13px;
 }
 
 .footer_cover ul {
@@ -472,36 +521,38 @@ li {
     font-weight: inherit;
 }
 
-.footer_cover .infor {
-    width: 20%;
-    display: inline-block;
+.footer_cover .footer_row {
+    padding: 22px 11px 0 24px;
 }
 
-.footer_cover .customer_support {
-    width: 20%;
-    display: inline-block;
+.footer_cover .footer_row .footer_col4 {
+    float: left;
+    width: 23%;
 }
 
-.footer_cover .service {
-    width: 20%;
-    display: inline-block;
+.footer_cover .footer_row .footer_col4:nth-child(4n) {
+    clear: right;
 }
 
-.footer_cover .social_network {
-    width: 38%;
-    /* chú ý ở đây là 38% không phải 40% như dự tính */
-    display: inline-block;
-    text-align: left;
+.footer_cover .footer_row .footer_col4:nth-child(4n+1) {
+    clear: left;
+}
+
+.footer_cover .footer_row .footer_col4:last-child {
+    width: 31%;
+    float: right;
+    margin: 20px -27px 0 0;
 }
 
 .footer_cover .social_network h4 {
-    text-transform: uppercase;
+    margin: 0px 0 15px 0;
 }
 
 .footer_cover .social_network ul {
     float: left;
     width: 100%;
     padding: 0;
+    margin: -14px 0 8px 0;
 }
 
 .footer_cover .social_network li {
@@ -524,6 +575,7 @@ li {
     border-radius: 5px 0 0 5px;
     padding: 7px 64px 7px 13px;
     border-right: none;
+    color: #ffffff;
 }
 
 input[type="submit"] {
@@ -569,10 +621,7 @@ input[type="submit"] {
 
 
 /*##################-$-Start setting after and before-$-##################*/
-/* .infor:before,
-.customer_support:before,
-.service:before,
-.social_network:before, */
+
 .cover_copyright:before,
 .navigation_menu_cover:before,
 .header_cover:before {
@@ -581,11 +630,7 @@ input[type="submit"] {
     clear: both;
 }
 
-/* ul.logo_brand:after, */
-/* .infor:after,
-.customer_support:after,
-.service:after,
-.social_network:after, */
+.footer_row:after,
 .cover_copyright:after,
 .shop_brand:after,
 .content_cover .content:after,
