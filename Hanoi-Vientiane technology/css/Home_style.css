@@ -171,7 +171,7 @@ li {
 
 .service_button .service_row .one_button {
     width: 32%;
-    height: 100px;
+    height: 146px;
     float: left;
     text-align: center;
     border: 1px solid #000000;
@@ -181,36 +181,38 @@ li {
     display: inline-block;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #s_r_1 {
-    background: green;
+    background: #73c814;
 }
 
 #s_r_2 {
-    background: blue;
+    background: #297aee;
 }
 
 #s_r_3 {
-    background: orchid;
+    background: #0abe7c;
 }
 
 #s_r_4 {
-    background: purple;
+    background: #a469bd;
 }
 
 #s_r_5 {
-    background: orange;
+    background: #f58d01;
 }
 
 #s_r_6 {
-    background: yellow;
+    background: #f1c40f;
 }
 
 /*--------x-END setting photo_slide_bar-x--------*/
 
 
-/*--------$-START setting content_right-$--------*/
+/*--------$-START setting content_left-$--------*/
 
 .content_cover .content .content_left {
     float: left;
@@ -288,11 +290,23 @@ li {
     border-bottom: 2px solid #ffd401;
 }
 
-/*--------x-END setting content_right-x--------*/
+/*--------x-END setting content_left-x--------*/
 
 
+/*--------$-START setting_right -$--------*/
 
-/*--------$-START setting_left -$--------*/
+.deail_HT_company li{
+    overflow: hidden;
+}
+
+.deail_HT_company li .icon_service {
+    float: left;
+    width: 83px;
+}
+
+.deail_HT_company li .dtail {
+    overflow: hidden;
+}
 
 .content_cover .content .content_right {
     float: right;
@@ -426,6 +440,12 @@ li {
     font-weight: bold;
     font-size: 15px;
     display: block;
+    text-transform: uppercase;
+    margin: -7px 0px 19px -1px;
+}
+
+.content_right .contact .contact_detail {
+    margin: -2px 0 0 -1px;
 }
 
 .content_right .contact .contact_detail p {
@@ -442,14 +462,14 @@ li {
     display: inline-block;
     border-radius: 50%;
     border: 1px solid #fddd13;
-    padding: 7px;
+    padding: 5px;
 }
 
 .content_right .contact .contact_detail .contact_home, .contact_phone, .contact_mail {
     display: block;
 }
 
-/*--------x-END setting_left -x--------*/
+/*--------x-END setting_right -x--------*/
 
 
 /*--------$-START setting shop_brand-$--------*/
@@ -459,6 +479,7 @@ li {
     text-align: center;
     width: 100%;
     border-top: 1px solid #ededed;
+    padding-bottom: 2px;
 }
 
 .content_cover .shop_brand h3 {
@@ -466,13 +487,14 @@ li {
     font-weight: bold;
     color: #242424;
     border-bottom: 2px solid #ffd401;
-    display: inline;
+    display: inline-block;
+    margin: 36px 0 18px 3px;
 }
 
 .content_cover .shop_brand p {
     color: #646464;
     font-size: 16px;
-    margin: 0;
+    margin: 0 0 15px 2px;
 }
 
 .content_cover .shop_brand ul {
@@ -483,6 +505,7 @@ li {
 
 .content_cover .shop_brand li {
     float: left;
+    margin: 0 55px 0 -20px;
 }
 
 /*--------x-END setting shop_brand-x--------*/
@@ -528,6 +551,16 @@ li {
 .footer_cover .footer_row .footer_col4 {
     float: left;
     width: 23%;
+    margin: 0 -34px 0 0px;
+    padding-bottom: 29px;
+}
+
+.footer_cover .footer_row .footer_col4 li {
+    margin: 4px 0 0 2px;
+}
+
+.footer_cover .footer_row .footer_col4:nth-child(4n-1) {
+    margin: -1px 0 0 54px;
 }
 
 .footer_cover .footer_row .footer_col4:nth-child(4n) {
@@ -552,7 +585,7 @@ li {
     float: left;
     width: 100%;
     padding: 0;
-    margin: -14px 0 8px 0;
+    margin: -18px 0 8px -1px;
 }
 
 .footer_cover .social_network li {
@@ -560,7 +593,7 @@ li {
 }
 
 .footer_cover .social_network .s_icon {
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .footer_cover .social_network .input_email_box .email_input {
@@ -579,11 +612,12 @@ li {
 }
 
 input[type="submit"] {
-    background-color: #ffdd02;
+    /* background-color: #ffdd02; */
     border: none;
     border-radius: 0px 5px 5px 0px;
     padding: 10px 26px 6px 25px;
     margin: 0 0px -11px -3px;
+    background: url(../images/icon/next.png) no-repeat #ffdd02 50% 50%;
 }
 
 .footer_cover .social_network .input_email_box .submit_button {
