@@ -139,6 +139,7 @@ li {
 
 .content_cover .content {
     background: #ffffff;
+    padding-top: 6px;
 }
 
 
@@ -154,6 +155,14 @@ li {
     border: 1px solid #000000;
     overflow: hidden;
     clear: right;
+}
+
+.content_cover .photo_slide_bar .main_slider ul {
+    float: right;
+}
+
+.content_cover .photo_slide_bar .main_slider li {
+    float: left;
 }
 
 .content_cover .photo_slide_bar .service_button {
@@ -219,8 +228,17 @@ li {
     width: 75%;
 }
 
+.content_cover .content_left .product_list {
+    margin: -12px 0 0 11px;
+}
+
 .content_cover .content_left .product_list .one_product {
     display: inline-block;
+    margin-right: 47px; 
+}
+
+.content_left .product_list .one_product .product_infor {
+    padding-top: 5px;
 }
 
 .content_left .product_list .one_product p.sale_percent {
@@ -235,6 +253,7 @@ li {
 
 .content_left .product_list .one_product .product_image {
     position: relative;
+    margin: 0 0 0 7px;
 }
 
 .content_left .product_list .one_product p.sale_percent {
@@ -263,6 +282,7 @@ li {
     font-size: 13px;
     font-weight: bold;
     color: #f93306;
+    margin: -9px 0 -10px 0;
 }
 
 .content_left .product_list .one_product p.price_root {
@@ -274,7 +294,7 @@ li {
 
 .content_cover .content .one_part {
     border-bottom: 1px solid #e2e2e2;
-    padding: 26px 26px 0px 21px;
+    padding: 0 0 0 21px;
     margin: 0px;
 }
 
@@ -288,12 +308,15 @@ li {
     font-size: 21px;
     display: inline-block;
     border-bottom: 2px solid #ffd401;
+    text-transform: uppercase;
 }
 
 /*--------x-END setting content_left-x--------*/
 
 
 /*--------$-START setting_right -$--------*/
+
+
 
 .deail_HT_company li{
     overflow: hidden;
@@ -302,10 +325,14 @@ li {
 .deail_HT_company li .icon_service {
     float: left;
     width: 83px;
+    margin: 0 18px -6px 8px;
 }
 
 .deail_HT_company li .dtail {
     overflow: hidden;
+    text-transform: uppercase;
+    margin: 20px 0 0 -25px;
+    line-height: 20px;
 }
 
 .content_cover .content .content_right {
@@ -342,6 +369,11 @@ li {
 
 .content_cover .content .content_right .HT_company {
     border-bottom: 1px solid #e2e2e2;
+    margin: -2px 0 0 4px;
+}
+
+.content_cover .content .content_right .HT_company .HT_logo {
+    margin-bottom: -30px;
 }
 
 .content_cover .content .content_right .HT_company li {
@@ -366,6 +398,13 @@ li {
     padding: 0;
 }
 
+.content_right ul.hot_product_list {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 19px 22px 0 15px;
+    text-align: center;
+}
+
 .content_cover .content .content_right .best_seller h2 {
     color: #242424;
     font-weight: bold;
@@ -374,14 +413,25 @@ li {
     display: inline-block;
 }
 
+.best_seller_list .one_product {
+    display: inline-block;
+}
+
+.content_cover .content .content_right .best_seller .product_image {
+    position: relative;
+}
+
 .content_right .best_seller .one_product p.sale_percent {
     border-radius: 50%;
     color: #ffffff;
     background-color: #fa3407;
     display: inline-block;
-    padding: 17px 7px 17px 7px;
+    padding: 10px 2px 10px 2px;
     font-size: 15px;
     font-weight: bold;
+    position: absolute;
+    top: 1px;
+    right: 69px;
 }
 
 .content_right .best_seller .one_product .product_infor p.product_name {
@@ -417,8 +467,8 @@ li {
     border-bottom: 1px solid #f2f2f2;
 }
 
-.content_right .hot_product {
-    border-bottom: 1px solid #f2f2f2;
+.content_right .hot_product .one_product {
+    margin: -5px 0 0 -2px;
 }
 
 .content_right .hot_product p.product_name {
@@ -433,6 +483,15 @@ li {
     font-weight: bold;
     font-size: 17px;
     display: block;
+    margin-top: -21px;
+}
+
+.content_right .hot_product .product_image {
+    margin: 28px 0 34px -1px;
+}
+
+.content_right .contact {
+    margin: 27px 0 0 9px;
 }
 
 .content_right .contact h2 {
@@ -446,6 +505,15 @@ li {
 
 .content_right .contact .contact_detail {
     margin: -2px 0 0 -1px;
+}
+
+.content_right .contact .contact_detail .contact_phone {
+    margin: -15px 0 -16px 0px;
+}
+
+.content_right .contact .contact_detail .ctdetail {
+    display: inline;
+    margin: 0 0 0 8px;
 }
 
 .content_right .contact .contact_detail p {
@@ -664,6 +732,7 @@ input[type="submit"] {
     clear: both;
 }
 
+.photo_slide_bar:after,
 .footer_row:after,
 .cover_copyright:after,
 .shop_brand:after,
