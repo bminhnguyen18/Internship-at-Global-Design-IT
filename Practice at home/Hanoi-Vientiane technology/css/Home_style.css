@@ -1,0 +1,94 @@
+*{}
+
+/* ********** Start big part: Basic setting ********** */
+
+body {
+    background: #e2e2e2;
+    margin: 0;
+    font-family: arial;
+}
+
+.container  {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* xxxxxxxxxx End big part: Basic setting xxxxxxxxxx */
+
+
+
+/* ********** Start big part: Main setting ********** */
+
+.header {
+    background: black;
+    color: #ffffff;
+    border-top: 1px solid yellow;
+    overflow: hidden;
+}
+
+/* ---------- Start small part: logo_and_slogan ---------- */
+
+.header .logo_and_slogan {
+    display: inline-block;
+    float: left;
+}
+
+/* ========== End small part: logo_and_slogan ========== */
+
+
+/* ---------- Start small part: contact_header ---------- */
+
+.header .contact_header {
+    float: right;
+}
+
+.header .contact_header .contact_detail_hidden {
+    display: none;
+}
+
+.header_cover .hotline i.fas.fa-phone-volume {
+    transform: rotateY(180deg);
+    font-size: 40px;
+    padding: 0px 22px 0 8px;
+}
+
+/* ========== End small part: contact_header ========== */
+
+
+/* xxxxxxxxxx End big part: Main setting xxxxxxxxxx */
+
+
+
+/* ********** Start big part: Setting before-after ********** */
+
+/* .cover_copyright:before,
+.navigation_menu_cover:before,
+.header_cover:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.photo_slide_bar:after,
+.footer_row:after,
+.cover_copyright:after,
+.shop_brand:after,
+.content_cover .content:after,
+.sub_navigation:after,
+.navigation_menu_cover:after,
+.header_cover:after {
+    content: '';
+    display: table;
+    clear: both;
+} */
+
+/* xxxxxxxxxx End big part: Setting before-after xxxxxxxxxx */
