@@ -38,7 +38,7 @@ li {
 /* ---------- Start small part: logo_and_slogan ---------- */
 
 .header .logo_and_slogan {
-    display: inline-block;
+    display: block;
     float: left;
 }
 
@@ -51,11 +51,19 @@ li {
     float: right;
 }
 
+.header .contact_header .contact_button p {
+    display: inline-block;
+}
+
+.header .contact_header .contact_button i.fas {
+    color: yellow;
+}
+
 .header .contact_header .contact_detail_hidden {
     display: none;
 }
 
-.header_cover .hotline i.fas.fa-phone-volume {
+.header .contact_header .contact_detail_hidden i.fas.fa-home {
     transform: rotateY(180deg);
     font-size: 40px;
     padding: 0px 22px 0 8px;
