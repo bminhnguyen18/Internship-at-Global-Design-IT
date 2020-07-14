@@ -53,6 +53,9 @@ li {
 
 .header .contact_header .contact_button p {
     display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .header .contact_header .contact_button i.fas {
@@ -70,6 +73,31 @@ li {
 }
 
 /* ========== End small part: contact_header ========== */
+
+
+/* ---------- Start small part: Navigation Bar ---------- */
+
+.navigation ul.navigation_list {
+    display: inline-block;
+}
+
+.navigation .navigation_list li {
+    float: left;
+}
+
+.navigation .navigation_list li a {
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navigation .navigation_list li.active i {
+    color: yellow;
+}
+
+/* ========== End small part: Navigation Bar ========== */
 
 
 /* xxxxxxxxxx End big part: Main setting xxxxxxxxxx */
